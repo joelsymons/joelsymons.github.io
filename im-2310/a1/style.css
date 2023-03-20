@@ -1,0 +1,90 @@
+
+ * {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: content-box;
+  }
+  
+  @font-face {
+    font-family: 'Work Sans';
+    src: url(fonts/WorkSans-Regular.ttf);
+  }
+  
+  body {
+    color: #e2d5c0;
+    background-color: #1322aafa;
+    font-family: "Helvetica", sans-serif;
+  }
+  
+
+  pre {
+    font-family: spaceMono;
+  }
+  
+  div,
+  section {
+    box-shadow: 5px 5px 15px #000000;
+  }
+  
+  strong {
+    font-weight: bolder;
+    color: #ffa425;
+  }
+  
+  code {
+    display: block;
+    background-color:#0d0d15;
+    border: 2px solid #e2d5c0;
+    padding: 0.5rem;
+  }
+  
+  h1 {
+    max-width: fit-content;
+    font-size: 3rem;
+    margin: 25px auto;
+    margin-bottom: 50px;
+    font-family: 'Work Sans';
+  }
+  
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 2rem;
+    border-style: double;
+    border-color: #e2d5c0;
+    border-width: 0 0 3px 0;
+  }
+
+  ul, ol {
+    list-style-position: inside;
+    padding-top: 15px;
+    font-size: 1.25rem;
+  }
+  
+
+  ol li {
+    margin-bottom: .5rem;
+  }
+  
+  p {
+    font-size: 1.25rem;
+    text-align: left;
+    padding-top: 15px;
+  }
+
+
+  .section-box {
+    max-width: 10%;
+    display: block;
+    background-color:#4d48bd;
+    border-style: solid;
+    border-color: #e2d5c0;
+    border-width: 25px;
+    padding: 25px;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    overflow: auto;
+  }
