@@ -1,0 +1,62 @@
+
+/* Using the original comic (Hedra pg.29), first we set the boundaries 
+of the page so that it fits on an A4 sheet of paper. To do this we can
+use the dimensions of an A4 to define the size of the strip. We can also
+give it a light-coloured gradient to make it less bland than just white.*/
+.a4-paper {
+  width: 210mm;
+  height: 297mm;
+  padding: 20mm;
+  background: linear-gradient(-45deg, red, orange, yellow);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 3px solid black;
+  margin: 0 auto;
+}
+/* Then, we need to make sure everything is aligned to the center and 
+use wrapping to put them in order */
+.comic-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Now we have to define the size of the smaller panels. To make the panels
+more distinct, we can add a gradient background to them so they contrast with
+the background of the page. I also added dashed border lines here because the 
+yellow and orange background reminded me of high-vis construction gear, and I
+thought the dashed line played into that nicely, as though the page is "still
+under construction." */
+.panel {
+  width: 38mm;
+  height: 70mm;
+  margin: 1.2mm;
+  background:linear-gradient(61.7deg, rgb(0, 255, 0), blue, aqua);
+  border: 2px dashed black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* We should also align the 2nd and 4th panels slightly lower to match the 
+reference comic strip*/
+.panel-lower {
+  margin-top: 40mm;
+}
+/* After that, we define the size of the larger 6th panel to fit the 
+width of the page and to make it reach the bottom margin. We also add 
+a bit of visual flair in the form of a rainbow gradient for contrast and
+distinction.*/
+.full-row {
+  width: 210mm;
+  height: 182.5mm;
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+}
+
+/* I decided to add a diagonal line in each of the smaller panels to neatly 
+follow the gradient and make it look more defined. */
+.diagonal-line {
+  position: absolute;
+  width: 79.6mm;
+  height: 2px;
+  background-color: black;
+  transform: rotate(61.7deg);
+}
