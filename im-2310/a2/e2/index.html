@@ -43,8 +43,7 @@
         <button class="FilterButton" onclick='filterCategory("NA", this)'>North America</button>
       </details>
       <!-- I chose this filter as my first 'test' to consolidate my knowledge of how the filter works. I added a new attribute 'Continent' because 
-      there seemed to be a decent amount of variety and I wondered how difficult it would be to make the filter focus on an attribute that isn't
-      explicitly written as a class but instead is just individually written within the metadata for each recipe.-->
+      there seemed to be a decent amount of variety and I wondered how difficult it would be to add an entirely new attribute.-->
 
       <details class="FilterBox">
         <summary>Time to Cook</summary>
@@ -70,7 +69,8 @@
     <hr /> 
 
     <!-- Recipe 1 -->
-    <div class="RecipeBox HM Europe 30-60 Low">
+    <div class="RecipeBox HM Europe 30-60 Low"> <!-- For the filter to work, I added attributes to look for in the class definition of each recipe: Continent,
+    Time to Cook and Skill Level.-->
 
       <!-- don't forget to change out <div>s for the most appropriate element -->
       <!-- i'll give you one for free - you should change the URL into an <a> tag, don't forget to add the appropriate attributes so it works as a link -->
