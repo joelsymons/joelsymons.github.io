@@ -46,7 +46,7 @@ body{
 }
 
 .FilterBox{
-font-size: medium;
+  font-size: medium;
 }
 
 
@@ -59,7 +59,7 @@ font-size: medium;
 }
 
 .RecipeLink{
-
+  color: #0303d8;
 }
 /* Increased the size of the name of each recipe, again for contrast.*/
 .RecipeName{
