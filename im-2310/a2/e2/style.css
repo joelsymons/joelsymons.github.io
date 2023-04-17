@@ -3,7 +3,7 @@
 *{
   box-sizing: border-box;
   background-origin: border-box;
-  margin: 0;
+  margin: 0.1;
 }
 
 /* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
@@ -14,14 +14,14 @@
   --col-02:#f0f6f0;
   --col-03:#5252ff;
   --col-04:#b6e878;
-  --border: 1px solid var(--col-02);
+  --border: 2px solid var(--col-01);
 }
 
 body{
   display: flex;
   flex-direction: column;
-  background-color: var(--col-01);
-  color: var(--col-02);
+  background-color: var(--col-02);
+  color: var(--col-01);
   padding: 2vw;
 }
 
@@ -33,10 +33,15 @@ body{
   display: flex;
   flex-direction: column;
   border: var(--border);
+  text-align: center;
+  background-color: #b6e878;
+  padding: 2dvw;
 }
 
 .FilterSection{
-
+  background-color: #5252ff;
+  color: #f0f6f0;
+  padding: 2vw;
 }
 
 .FilterBox{
@@ -56,7 +61,7 @@ body{
 }
 
 .RecipeName{
-
+  color: #5252ff;
 }
 
 .Author{
@@ -64,11 +69,13 @@ body{
 }
 
 .RecipeImageContainer{
-
+  border: var(--border);
+  padding: 2mm;
 }
 
 .RecipeImg{
-
+  max-width: 100%;
+  height: auto;
 }
 
 .Attribution{
@@ -114,4 +121,3 @@ body{
 .SpecialEquipment{
 
 }
-
