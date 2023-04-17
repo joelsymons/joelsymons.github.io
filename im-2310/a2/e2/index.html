@@ -17,13 +17,13 @@
 
   <body>
 
-    <div>Interactive Media 1 Recipe List</div>
+    <div>Interactive Media 1 Recipe List -- Joel Symons s3951588</div>
 
     <hr /> 
 
     <div class="FilterSection">     
 
-      <!-- I chose these three filters because... -->
+      <!-- Below each filter option I will explain why I chose each one. -->
 
       <details class="FilterBox">
         <summary>Author</summary>
@@ -42,13 +42,35 @@
         <button class="FilterButton" onclick='filterCategory("Africa", this)'>Africa</button>
         <button class="FilterButton" onclick='filterCategory("NA", this)'>North America</button>
       </details>
+      <!-- I chose this filter as my first 'test' to consolidate my knowledge of how the filter works. I added a new attribute 'Continent' because 
+      there seemed to be a decent amount of variety and I wondered how difficult it would be to make the filter focus on an attribute that isn't
+      explicitly written as a class but instead is just individually written within the metadata for each recipe.-->
 
+      <details class="FilterBox">
+        <summary>Time to Cook</summary>
+        <button class="FilterButton" onclick='filterCategory("RecipeBox", this)'>All Times</button>
+        <button class="FilterButton" onclick='filterCategory("lt30", this)'>Less than 30 minutes</button>
+        <button class="FilterButton" onclick='filterCategory("30-60", this)'>30-60 minutes</button>
+        <button class="FilterButton" onclick='filterCategory("60-120", this)'>60-120 minutes</button>
+        <button class="FilterButton" onclick='filterCategory("gt120", this)'>More than 120 minutes</button>
+      </details>
+      <!-- I chose this filter because time to cook is often the first thing I look for if I look at a new recipe; I'm sure I'm not the only one!-->
+
+      <details class="FilterBox">
+        <summary>Skill Level</summary>
+        <button class="FilterButton" onclick='filterCategory("RecipeBox", this)'>All Times</button>
+        <button class="FilterButton" onclick='filterCategory("Low", this)'>Low</button>
+        <button class="FilterButton" onclick='filterCategory("Medium", this)'>Medium</button>
+
+      </details>
+      <!-- I chose this filter based on an assumption that a lot of the time when people look at a recipe they aren't looking to become the next
+      Masterchef; instead the desire is often just pure simplicity of making the dish. -->
     </div>
 
     <hr /> 
 
     <!-- Recipe 1 -->
-    <div class="RecipeBox HM Europe">
+    <div class="RecipeBox HM Europe 30-60 Low">
 
       <!-- don't forget to change out <div>s for the most appropriate element -->
       <!-- i'll give you one for free - you should change the URL into an <a> tag, don't forget to add the appropriate attributes so it works as a link -->
@@ -101,7 +123,7 @@
     </div>
     
     <!-- Recipe 2 -->
-    <div class="RecipeBox HM Europe">
+    <div class="RecipeBox HM Europe 60-120 Low">
 
       <div class="RecipeLink">URL: https://www.abc.net.au/everyday/caprese-salad-slow-roasted-tomato-rocket-basil-gremolata-recipe/10776846</div>
 
@@ -151,7 +173,7 @@
     </div>
     
     <!-- Recipe 3 -->
-    <div class="RecipeBox KLA Asia">
+    <div class="RecipeBox KLA Asia lt30 Medium">
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/crispy-enoki-and-onion-fritter-with-thai-curry-mayo-recipe</div>
 
@@ -196,12 +218,12 @@
 
       <div class="DateUpdated">Date Updated: Aug. 30, 2018</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 4 -->
-    <div class="RecipeBox M Asia">
+    <div class="RecipeBox M Asia gt120 Medium">
 
       <div class="RecipeLink">URL: https://www.maangchi.com/recipe/jjinppang</div>
 
@@ -245,12 +267,12 @@
 
       <div class="DateUpdated">Date Updated: August 11, 2021</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 5 -->
-    <div class="RecipeBox KLA Europe">
+    <div class="RecipeBox KLA Europe 60-120 Low">
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/the-food-lab-best-chocolate-chip-cookie-recipe</div>
 
@@ -293,12 +315,12 @@
 
       <div class="DateUpdated">Date Updated: Sep. 16, 2022</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 6 -->
-    <div class="RecipeBox KLA Asia">
+    <div class="RecipeBox KLA Asia lt30 Low">
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/grilled-cheese-with-kimchi-recipe</div>
 
@@ -343,12 +365,12 @@
 
       <div class="DateUpdated">Date Updated: Sep. 21, 2022</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 7 -->
-    <div class="RecipeBox CLM NA">
+    <div class="RecipeBox CLM NA gt120 Medium">
 
       <div class="RecipeLink">URL: https://www.patreon.com/posts/recipe-hands-off-60369279</div>
 
@@ -392,12 +414,12 @@
 
       <div class="DateUpdated">Date Updated: N/A</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 8 -->
-    <div class="RecipeBox M Asia">
+    <div class="RecipeBox M Asia lt30 Low">
 
       <div class="RecipeLink">URL: https://www.maangchi.com/recipe/kimchijeon</div>
 
@@ -440,12 +462,12 @@
 
       <div class="DateUpdated">Date Updated: August 1, 2021</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 9 -->
-    <div class="RecipeBox KLA Africa">
+    <div class="RecipeBox KLA Africa 30-60 Medium">
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/shakshuka-north-african-shirred-eggs-tomato-pepper-recipe</div>
 
@@ -488,12 +510,12 @@
 
       <div class="DateUpdated">Date Updated: Aug. 10, 2022</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 10 -->
-    <div class="RecipeBox CLM Europe">
+    <div class="RecipeBox CLM Europe 60-120 Low">
 
       <div class="RecipeLink">URL: https://www.patreon.com/posts/pasta-with-sauce-45042575</div>
 
@@ -536,12 +558,12 @@
 
       <div class="DateUpdated">Date Updated: N/A</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 11 -->
-    <div class="RecipeBox M Asia">
+    <div class="RecipeBox M Asia 30-60 Medium">
 
       <div class="RecipeLink">URL: https://www.maangchi.com/recipe/yangnyeom-tongdak</div>
 
@@ -586,12 +608,12 @@
 
       <div class="DateUpdated">Date Updated: August 3, 2021</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 12 -->
-    <div class="RecipeBox KLA Europe">
+    <div class="RecipeBox KLA Europe 30-60 Medium">
 
       <div class="RecipeLink">URL: https://www.seriouseats.com/ultimate-beef-stroganof-recipe</div>
 
@@ -636,12 +658,12 @@
 
       <div class="DateUpdated">Date Updated: Aug. 27, 2020</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
     
     <!-- Recipe 13 -->
-    <div class="RecipeBox CLM Europe">
+    <div class="RecipeBox CLM Europe gt120 Medium">
 
       <div class="RecipeLink">URL: https://www.patreon.com/posts/recipe-vanilla-60100711</div>
 
@@ -691,7 +713,7 @@
     </div>
 
     <!-- Recipe 14 -->
-    <div class="RecipeBox HM Europe">
+    <div class="RecipeBox HM Europe lt30 Low">
 
       <div class="RecipeLink">URL: https://www.abc.net.au/everyday/vegetarian-carbonara-with-mushrooms-and-miso/12426392</div>
 
@@ -735,7 +757,7 @@
 
       <div class="DateUpdated">Date Updated: 26 Feb 2021</div>
 
-      <div class="SpecialEquipment">Special Equipment: </div>
+      <div class="SpecialEquipment">Special Equipment: N/A</div>
 
     </div>
 
