@@ -59,7 +59,7 @@ body{
 .RecipeLink{
 
 }
-
+/* Increased the size of the name of each recipe, again for contrast.*/
 .RecipeName{
   color: #5252ff;
   font-size: x-large;
@@ -68,12 +68,12 @@ body{
 .Author{
 
 }
-
+/* Gave each image another border inside each RecipeBox, to further sort each image and its information.*/
 .RecipeImageContainer{
   border: var(--border);
   padding: 2mm;
 }
-
+/* Adjusted image properties so that they can fit on a mobile screen.*/
 .RecipeImg{
   max-width: 100%;
   height: auto;
