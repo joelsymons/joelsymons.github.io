@@ -42,11 +42,14 @@ body{
   background-color: #5252ff;
   color: #f0f6f0;
   padding: 2vw;
+  font-size: x-large;
+  text-underline-position: below;
 }
 
 .FilterBox{
-
+font-size: medium;
 }
+
 
 .FilterButton{
 
