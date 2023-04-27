@@ -56,7 +56,7 @@ async function callOpenAI(prompt) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer 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'
+      'Authorization': 'Bearer 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'
     },
     body: JSON.stringify({
       prompt: prompt,
