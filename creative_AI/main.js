@@ -4,10 +4,6 @@ const writeBtn = document.querySelector('#write-btn');
 const container = document.querySelector('.container');
 let currentTextArea;
 
-require('dotenv').config();
-
-const apiKey = process.env.OPENAI_API_KEY;
-
 solveBtn.addEventListener('click', () => {
   currentTextArea = createTextArea('Explain your problem here...');
   container.appendChild(currentTextArea);
@@ -60,7 +56,7 @@ async function callOpenAI(prompt) {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer ${apiKey}'
+      'Authorization': 'Bearer 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'
     },
     body: JSON.stringify({
       prompt: prompt,
