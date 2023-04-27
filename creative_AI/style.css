@@ -1,0 +1,40 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+  }
+  
+  .btn {
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	margin: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	color: white;
+	background-color: #4CAF50;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+	background-color: #3E8E41;
+  }
+  
+  .input-area {
+	font-size: 1.2rem;
+	padding: 1rem;
+	margin-top: 1rem;
+	width: 80%;
+	min-height: 10rem;
+	border: 2px solid #4CAF50;
+	border-radius: 0.5rem;
+	outline: none;
+	transition: border-color 0.3s ease;
+  }
+  
+  .input-area:focus {
+	border-color: #3E8E41;
+  }
+  
