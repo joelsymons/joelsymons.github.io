@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+
+<!-- 
+
+  PROVIDE MEANINGFUL FEEDBACK TO THE FOLLOWING ELEMENTS:
+  1) <button> with the id of load-link on the loading page (index.html)
+  2) <div> with the id of load-throbber on the loading page (index.html)
+  3) <li> inside of the <ol> inside of the <nav> on the information page (hosono.html)
+  4) <button> with the id of mode-button on the information page (hosono.html)
+  5) switchModes() function - hint you can add a transition CSS property to the <body> and it will be inherited 
+     by all the elements inside, so when custom CSS variables are changed it will apply transition
+
+-->
+
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 
+      this file contains some CSS that removes the default HTML feedback of the elements you need to work on - please
+      leave this import as it is and don't change anything in the CSS file called feedbackReset.css
+    -->
+    <link rel="stylesheet" type="text/css" href="feedbackReset.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="modeSwitch.js" defer></script>
+
+    <title>Haruomi Hosono</title>
+
+  </head>
+
+  <body>
+    <!-- The function switchModes() is declared in the file modeSwitch.js -->
+    <button onclick="switchModes()" id="mode-button">Dark Mode</button>
+    
+    <header>
+      
+      <h1>Haruomi Hosono</h1>
+      <hr />
+      <nav>
+        <ol>
+          <li><a href="#bio">Biography</a></li>
+          <li><a href="#bands-collab">Bands and collaborations</a></li>
+          <li><a href="#discography">Discography</a></li>
+          <li><a href="#composition">Composition works</a></li>
+          <li><a href="#filmography">Filmography</a></li>
+          <li><a href="#references">References</a></li>
+        </ol>
+      </nav>
+      
+    </header>
+    
+    <main>
+      <section >
+        <p>
+          <b>Haruomi Hosono</b> (細野 晴臣, <i>Hosono Haruomi</i>, born July 9, 1947), sometimes credited as <b>Harry Hosono</b>, 
+          is a <a href="">Japanese musician</a>, singer, songwriter and record producer. He is considered to be one of the most influential 
+          musicians in Japanese pop music history, credited with shaping the sound of <a href="">Japanese pop</a> for decades as well as pop 
+          music outside of Japan. He also inspired genres such as <a href="">city pop</a> and <a href="">Shibuya-kei</a>,<a href="#cite-1"><sup>[1]</sup></a> and as leader 
+          of Yellow Magic Orchestra, contributed to the development and pioneering of numerous electronic genres.<a href="#cite-2"><sup>[2]</sup></a>
+        </p>
+        <p>
+          The grandson of <a href=""><i>Titanic</i></a> survivor <a href="">Masabumi Hosono</a>, Haruomi began his career with the <a href="">psychedelic rock</a> 
+          band Apryl Fool, before achieving recognition both nationally and internationally, as a founding member of the bands <a href="">Happy End</a> 
+          and Yellow Magic Orchestra.<a href="#cite-1"><sup>[1]</sup></a><a href="#cite-3"><sup>[3]</sup></a> Hosono has also released many solo albums covering a variety of styles, including 
+          film soundtracks and a variety of electronic ambient albums. As well as recording his own music, Hosono has done considerable 
+          production work for other artists such as <a href="">Miharu Koshi</a>, Sheena and the Roketts, <a href="">Sandii & the Sunsetz</a>, 
+          <a href="">Chisato Moritaka</a> and <a href="">Seiko Matsuda</a>. In 2003, Hosono was ranked by <a href="">HMV Japan</a> at number 44 on their 
+          list of the top 100 Japanese pop acts of all time.<a href="#cite-4"><sup>[4]</sup></a>
+        </p>
+      </section>
+      
+      <section id="bio">
+        <h2>Biography</h2>
+        <hr />
+        <p>
+          Hosono is the grandson of <a href="">Masabumi Hosono</a>, the only Japanese passenger and survivor of the sinking of <a href="">RMS <i>Titanic</i></a>. 
+          Hosono first came to attention in Japan as the bass player of the <a href="">psychedelic rock</a> band Apryl Fool, alongside drummer 
+          <a href="">Takashi Matsumoto</a>, who released the album <i>The Apryl Fool</i> in 1969. Hosono and Matsumoto then formed the influential 
+          <a href="">folk rock</a> group <a href="">Happy End</a> with <a href="">Eiichi Ohtaki</a> and <a href="">Shigeru Suzuki</a>.<a href="#cite-5"><sup>[5]</sup></a> One of the songs he composed for Happy End, 
+          "<a href="">Kaze wo Atsumete</a>" (1971), later appeared in the American film <a href=""><i>Lost in Translation</i></a> and on <a href="">its soundtrack</a> 
+          in 2003.<a href="#cite-6"><sup>[6]</sup></a> After <i>Happy End</i> disbanded around 1974, Hosono worked with Suzuki and a loose association of artists making 
+          "<a href="">exotica</a>"-style music under the title <i>Tin Pan Alley</i>.
+        </p>
+        <p>
+          His involvement in <a href="">electronic music</a> also dates back to the early 1970s, when he performed the <a href="">electric bass</a> for 
+          <a href="">Inoue Yousui</a>'s folk <a href="">pop rock</a> album <i>Ice World</i> (1973) and <a href="">Osamu Kitajima</a>'s <a href="">progressive</a>/psychedelic rock 
+          album <a href=""><i>Benzaiten</i></a> (1974), both of which were <a href="">electronic rock</a> records utilizing synthesizers, electric guitars, and 
+          in the latter, <a href="">electronic drums</a> and <a href="">rhythm machines</a>.<a href="#cite-7"><sup>[7]</sup></a><a href="#cite-8"><sup>[8]</sup></a>
+        </p>
+        <p>
+          In 1977, Hosono invited <a href="">Ryuichi Sakamoto</a> and <a href="">Yukihiro Takahashi</a> to work on his <a href="">exotica</a>-flavoured album <a href=""><i>Paraiso</i></a>, 
+          which included electronic music produced using the <a href="">Yamaha CS-80</a> <a href="">polyphonic synthesizer</a> and <a href="">ARP Odyssey</a> synthesizer. 
+          The band was named "Harry Hosono and the Yellow Magic Band" and, having been recorded in late 1977, <i>Paraiso</i> was released in early 1978.<a href="#cite-9"><sup>[9]</sup></a> 
+          The three worked together again for the 1978 electronic album <i>Pacific</i>, which included an early version of the song "Cosmic Surfin'".<a href="#cite-10"><sup>[10]</sup></a>
+        </p>
+        <p>
+          In 1978, he released an innovative electronic soundtrack for a <a href="">fictional</a> <a href="">Bollywood</a> film, <i>Cochin Moon</i>, together with artist 
+          <a href="">Tadanori Yokoo</a> and future YMO band members Ryuichi Sakamoto and <a href="">Hideki Matsutake</a>. Inspired by a trip to India and "the exotic, 
+          luxurious, and seemingly wonder-filled scenarios played out in <a href="">Indian cinemas</a>", it was an experimental "electro-exotica" album <a href="">fusing</a> 
+          exotic <a href="">Indian music</a> (reminiscent of <a href="">Ravi Shankar</a> and <a href="">Bollywood music</a>) with electronic music, including an early "<a href="">synth</a> 
+          <a href="">raga</a>" song entitled "Hum Ghar Sajan" (from a <a href="">Guru Granth Sahib</a> phrase).<a href="#cite-11"><sup>[11]</sup></a> The same year, he contributed to Sakamoto's song 
+          "1000 Knives" for his solo album, <a href=""><i>Thousand Knives</i></a>, which experimented with fusing electronic music with traditional Japanese music in early 1978.<a href="#cite-12"><sup>[12]</sup></a>
+        </p>
+        <p>
+          He was one of the first producers to recognize the appeal of <a href="">video game sounds and music</a>. YMO's self-titled debut in 1978 contained 
+          substantial video game sounds and after YMO disbanded an early project was an album simply titled <i>Video Game Music</i> containing mixed and 
+          edited <a href="">Namco</a> <a href="">arcade game</a> music and sounds. <i>Video Game Music</i> was released in 1984 as an early example of a <a href="">chiptune</a> record<a href="#cite-13"><sup>[13]</sup></a> 
+          and the first video game music album.<a href="#cite-14"><sup>[14]</sup></a> That same year, he also produced the theme song for <a href="">Hayao Miyazaki</a>'s popular <a href="">anime</a> film 
+          <a href=""><i>Nausicaä of the Valley of the Wind</i></a>, "Kaze no Tani no Naushika", with vocals by actress-singer <a href="">Narumi Yasuda</a>.<a href="#cite-15"><sup>[15]</sup></a> In the late 80s 
+          and early 90s, the influence of <a href="">world music</a> on his music deepened, and he worked with international singers and musicians such as <a href="">Amina Annabi</a>.
+        </p>
+        <p>
+          He has produced a number of short-term band projects as a band member. His first post-YMO band was Friends of Earth. As with most of his projects 
+          he combines musical styles he's interested in. F.O.E. seemed to be a combination of funk and techno, and included a collaboration with <a href="">James Brown</a> 
+          and <a href="">Maceo Parker</a> for a remake of the song "<a href="">Sex Machine</a>". Another notable band project was 1995's Love, Peace & Trance. Members were 
+          <a href="">Mimori Yusa</a> ("Love"), Miyako Koda ("Peace"), Haruomi Hosono ("&") and Mishio Ogawa ("Trance").
+        </p>
+        <p>
+          In the 1990s he started the <a href="">Daisyworld</a> label to release a wide range of experimental artists from Japan and the rest of the world. Hosono 
+          collaborated on many of the releases, such as <a href="">World Standard</a>, a trip into Americana; HAT, a supergroup (the acronym stands for Hosono, 
+          <a href="">Atom Heart</a>, <a href="">Tetsu Inoue</a>), and "Quiet Logic", by <a href="">Mixmaster Morris</a> and <a href="">Jonah Sharp</a>. <a href="">The Orb</a> also paid tribute 
+          with a series of remixes including the notorious "Hope You Choke on Your Whalemeat".
+        </p>
+
+        <div class="img-wrapper">
+          <figure class="img-figure">
+            <img alt="Hosono performing with YMO in 2008" class="article-img" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/ae/YMOHosono2008%28cropped%29.jpg/220px-YMOHosono2008%28cropped%29.jpg" decoding="async" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/ae/YMOHosono2008%28cropped%29.jpg/330px-YMOHosono2008%28cropped%29.jpg 1.5x, //upload.wikimedia.org/wikipedia/commons/thumb/a/ae/YMOHosono2008%28cropped%29.jpg/440px-YMOHosono2008%28cropped%29.jpg 2x" data-file-width="1149" data-file-height="1125" /> 
+            <figcaption>
+              Hosono performing with YMO in 2008.
+            </figcaption>
+          </figure>
+        </div>
+
+        <p>
+          In 2002 Haruomi formed the duo <a href="">Sketch Show</a> with his YMO bandmate <a href="">Yukihiro Takahashi</a>. They have released two albums, one of which, 
+          <i>Loophole</i>, has received a UK release. When the third former YMO member, <a href="">Ryuichi Sakamoto</a> deepened his involvement it was decided 
+          to bill those collaborations as <a href="">Human Audio Sponge</a>.
+        </p>
+        <p>
+          In the spring of 2007, his fellow YMO members and other artist paid tribute to Haruomi with a 2-disc album titled <i>Tribute to Haruomi</i>. 
+          That same year, the animated film <a href=""><i>Appleseed Ex Machina</i></a> was released featuring a soundtrack performed and supervised by Hosono.
+        </p>
+        <p>
+          In September 2010 he performed at the De La Fantasia festival and played songs from his upcoming album.
+        </p>
+        <p>
+          In February 2011 it was announced that his new album, entitled <i>HoSoNoVa</i>, was to be released on April 20. He also performed a special 
+          concert to celebrate its release.
+        </p>
+        <p>
+          In May 2018, <a href="">Light in the Attic Records</a> announced a CD and vinyl reissue of five of Hosono's albums—<i>Hosono House</i>, <i>Cochin Moon</i>, 
+          <i>Paraiso</i>, <i>Philharmony</i> and <i>omni Sight Seeing</i>—for release in August and September 2018. The former four albums had never been released 
+          outside of Japan previously. Coinciding was the announcement that Hosono would play his first UK concerts as a solo artist in June; the shows were 
+          scheduled as part of Sakamoto's MODE festival happening throughout England in June and July. The June 23 concert at the <a href="">Barbican Centre</a> in 
+          London featured an appearance by his YMO bandmates, with whom he performed his <i>Solid State Survivor</i> composition "Absolute Ego Dance".
+        </p>
+        <p>
+          2019 marked Hosono's 50th anniversary in the music industry. On March 6, he released <i>Hochono House</i>, a mostly electronic remake of his solo debut 
+          <a href=""><i>Hosono House</i></a> that reversed the track listing. That spring, he performed his first solo shows in the U.S. This run included two sold-out 
+          shows at the <a href="">Gramercy Theatre</a> in New York City and a concert at the <a href="">Mayan Theater</a> in Los Angeles. The second New York show saw an appearance 
+          by current NYC resident <a href="">Akiko Yano</a>, who collaborated with Hosono in Tin Pan Alley, as a live support member of YMO, and as a solo artist; she sang 
+          Hosono's "Ai Ai Gasa", which she covered on her 1977 album <i>Iroha Ni Konpeitou</i>. In LA, Canadian indie rock musician <a href="">Mac DeMarco</a>—whose vocal 
+          admiration of Hosono has spread to a portion of his own fanbase—appeared during the show to perform "Honey Moon" as a duet with Hosono; Light in the 
+          Attic had recently released a cover of the song on a 7" single record, backed with the original version.
+        </p>
+        <p>
+          In the autumn of 2019, an exhibition on Hosono's career—"Hosono Sightseeing"—was on display in Tokyo Sky View at the <a href="">Roppongi Hills Mori Tower</a>; 
+          along with other memorabilia, this featured many of the instruments associated with Hosono, such as the <a href="">Roland TR-808</a>, <a href="">E-mu Emulator</a>, 
+          and <a href="">Prophet-5</a>. A documentary film, No Smoking, was also released, including footage from the U.S. and UK shows; appearances include Sakamoto, 
+          Takahashi, Demarco, longtime friend <a href="">Van Dyke Parks</a>, and protégé <a href="">Gen Hoshino</a>.
+        </p>
+      </section>
+
+      <section id="bands-collab">
+        <h2>Bands and collaborations</h2>
+        <hr />
+        <ul>
+          <li>Apryl Fool</li>
+          <li><a href="">Happy End</a></li>
+          <li>Tin Pan Alley</li>
+          <li><a href="">Yellow Magic Orchestra</a></li>
+          <li>Friends of Earth (F.O.E) (with <a href="">Eiki Nonaka</a>)</li>
+          <li>HIS (with <a href="">Kiyoshirō Imawano</a> and <a href="">Fuyumi Sakamoto</a>)</li>
+          <li>Testpattern (with <a href="">Yukihiro Takahashi</a>, <a href="">Fumio Ichimura</a>, and <a href="">Masao Hiruma</a>)</li>
+          <li>Love, Peace & Trance (<a href="">Mimori Yusa</a>, <a href="">Miyako Koda</a> and <a href="">Mishio Ogawa</a>)</li>
+          <li>Swing Slow (with <a href="">Miharu Koshi</a>)</li>
+          <li>HAT (with <a href="">Atom Heart</a> and <a href="">Tetsu Inoue</a>)</li>
+          <li>Harry & Mac (with <a href="">Makoto Kubota</a>)</li>
+          <li>Tin Pan (with Tatsuo Hayashi and Shigeru Suzuki)</li>
+          <li><a href="">Sketch Show</a> (with <a href="">Yukihiro Takahashi</a>)</li>
+          <li><a href="">HASYMO</a> (previously Human Audio Sponge) (Sketch Show and <a href="">Ryuichi Sakamoto</a>, with <a href="">Keigo Oyamada</a>, <a href="">Hiroshi Takano</a>, 
+            <a href="">Christian Fennesz</a>, Tomohiko Gondō and Ren Takada as live support)
+          </li>
+        </ul>
+      </section>
+
+      <section id="discography">
+        <h2>Discography</h2>
+        <hr />
+        <h3><b>Albums</b></h3>
+        <ul>
+          <li><a href=""><i>Hosono House</i></a> (1973)</li>
+          <li><a href=""><i>Tropical Dandy</i></a> (1975, as Haruomi "Hosono")</li>
+          <li><a href=""><i>Bon Voyage co.</i></a> (泰安洋行, Taian Yōkō) (1976, as Harry "The Crown" Hosono)</li>
+          <li><a href=""><i>Paraiso</i></a> (はらいそ, Haraiso) (1978, by "Harry Hosono and The Yellow Magic Band")</li>
+          <li><a href=""><i>Cochin Moon</i></a> (コチンの月, Kochin no Tsuki) (1978, by "Hosono & Yokoo")</li>
+          <li><a href=""><i>Philharmony</i></a> (1982)</li>
+          <li><i>Hana ni Mizu</i> (花に水) (1984, <i>cassette book</i>)</li>
+          <li><i>Making of Non-Standard Music/Making of Monad Music</i> (1984)</li>
+          <li><i>S·F·X</i> (1984, by "Haruomi Hosono with Friends of Earth")</li>
+          <li><i>Mercuric Dance</i> (1985)</li>
+          <li><i>Endless Talking</i> (1985)</li>
+          <li><a href=""><i>Omni Sight Seeing</i></a> (1989)</li>
+          <li><i>Medicine Compilation</i> (1993)</li>
+          <li><i>Mental Sports Mixes</i> (1993)</li>
+          <li><i>Good Sport</i> (1995)</li>
+          <li><i>Naga</i> (1995)</li>
+          <li><i>N.D.E. ("Near Death Experience")</i> (1995)</li>
+          <li><a href=""><i>Interpieces Organization</i></a> (1996, by Haruomi Hosono & <a href="">Bill Laswell</a>)</li>
+          <li><i>Road to Louisiana</i> (ルイジアナ珍道中, <i>Ruijiana Chindōchū</i>) (1999, with Makoto Kubota as "Harry & Mac")</li>
+          <li><i>Flying Saucer 1947</i> (2007, by "Harry Hosono & The World Shyness")</li>
+          <li><i>HoSoNoVa</i> (2011)</li>
+          <li><i>Heavenly Music</i> (2013)</li>
+          <li><i>Vu Ja De</i> (2017)</li>
+          <li><i>Hochono House</i> (2019)</li>
+          <li><i>Hosono Haruomi Live in US 2019</i> (2021)</li>
+        </ul>
+        <h3><b>Soundtrack albums</b></h3>
+        <ul>
+          <li><i>Video Game Music</i> (1984, songs from <a href="">Namco</a> games arranged and produced by Hosono)</li>
+          <li><a href=""><i>Nausicaä of the Valley of the Wind</i></a> (風の谷のナウシカ, <i>Kaze no Tani no Naushika</i>) (1984, <a href="">anime soundtrack</a>, 
+            only produced theme song sung by <a href="">Narumi Yasuda</a>)<a href="#cite-15"><sup>[15]</sup></a>
+          </li>
+          <li><a href=""><i>Coincidental Music</i></a> (1985, compilation of assorted background music/soundtrack commissions)</li>
+          <li><a href=""><i>Nokto de la Galaksia Fervojo</i></a> (銀河鉄道の夜, <i>Ginga Tetsudō no Yoru</i>) (1985, movie soundtrack)</li>
+          <li><i>Paradise View</i> (1985, movie soundtrack)</li>
+          <li><a href=""><i>The Tale of Genji</i></a> (源氏物語, <i>Genji Monogatari</i>) (1987, movie soundtrack)</li>
+          <li><i>Why Dogs Don't Talk Anymore</i> (だから犬はほえる, <i>Dakara Inu wa Hoeru</i>) (1996, background music for and included with 
+            the Taro Manabe picture book of the same name)
+          </li>
+          <li><i>La Maison de Himiko</i> (2005, movie soundtrack)</li>
+          <li><a href=""><i>Ex Machina</i></a> <i>Original Soundtrack/Original Soundtrack Complete Edition</i> (2007, soundtrack supervention, composition 
+            of some tracks)
+          </li>
+          <li><a href=""><i>Shoplifters</i></a> (2018) Original Soundtrack</li>
+        </ul>
+        <h3><b>Compilation albums</b></h3>
+        <ul>
+          <li>Hosono Box 1969–2000 (2000, Daisyworld)</li>
+          <li>Harry Hosono Crown Years 1974–1977 (2007)</li>
+        </ul>
+        <h3><b>Tribute albums</b></h3>
+        <dl>
+          <dt>
+            <ul>
+              <li>Tribute to Haruomi Hosono (2007, Commmons)</li>
+            </ul>
+          </dt>
+          <dd>
+            Featuring: <a href="">Van Dyke Parks</a>, <a href="">Ryuichi Sakamoto</a>, <a href="">Takako Minekawa</a>, <a href="">Miharu Koshi</a>, <a href="">Little Creatures</a>, 
+            <a href="">Tokyo Ska Paradise Orchestra</a>, <a href="">Hiroshi Takano</a>, <a href="">Towa Tei</a>, <a href="">Akiko Yano</a>, <a href="">Rei Harakami</a>, <a href="">Yukihiro Takahashi</a>, 
+            <a href="">Cornelius</a>, <a href="">Jim O'Rourke</a>, <a href="">Kahimi Karie</a>
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <ul>
+              <li>Strange Song Book – Tribute to Haruomi Hosono 2 (2008, Commmons)</li>
+            </ul>
+          </dt>
+          <dd>
+            Featuring: <a href="">Señor Coconut</a>, <a href="">Van Dyke Parks</a>, <a href="">Dr. John</a>, <a href="">Sheena & The Rokkets</a>, <a href="">Buffalo Daughter</a>, <a href="">Thurston Moore</a>, 
+            <a href="">Miu Sakamoto</a>, <a href="">Ryuichi Sakamoto</a>, <a href="">Fennesz</a>
+          </dd>
+        </dl>       
+        <h3><b>Contributions</b></h3>
+        <ul>
+          <li>CBS/Sony Sound Image Series:
+            <ul>
+              <li><a href="">Pacific</a> (with <a href="">Shigeru Suzuki</a> and <a href="">Tatsuro Yamashita</a>) (tracks 1, 4 and 8 composed and performed by Hosono) (1978)</li>
+              <li>The Aegean Sea (with Masataka Matsutoya and Takahiko Ishikawa) (tracks 3 and 4 composed and performed by Hosono) (1979)</li>
+              <li>Vol. 1 – Island Music (with Suzuki, Yamashita, Matsutoya, Ishikawa and <a href="">Ryuichi Sakamoto</a>) (tracks 1, 7, 9 and 10 composed and performed 
+                by Hosono) (1983)
+              </li>
+              <li>Vol. 2 – Off Shore (Suzuki, Yamashita, Matsutoya, Sakamoto, Masaki Matsubara and Kazumasa Akiyama) (tracks 1 and 2 composed and performed by Hosono) (1983)</li>
+            </ul>
+          </li>
+          <li><i>Melon Brains</i> (1994)</li>
+          <li><i>Goku</i> (1995)</li>
+          <li>Love, Peace & Trance (1995)</li>
+          <li><i>Lattice</i> (2000)</li>
+        </ul>
+      </section>
+
+      <section id="composition">
+        <h2>Composition work</h2>
+        <hr />
+        <dl>
+          <dt>
+            <ul>
+              <li>Imokin Trio (イモ欽トリオ):</li>
+            </ul>
+          </dt>
+          <dd>
+            High School Lullaby (1981)
+            <br/>
+            Teardrop Tanteidan (ティアドロップ探偵団) (1982)
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <ul>
+              <li><a href="">Miki Fujimura</a>:</li>
+            </ul>
+          </dt>
+          <dd>
+            仏蘭西映画
+            <br/>
+            夢・恋・人 (1983)
+            <br/>
+            妖星傅
+            <br/>
+            春 Mon Amour
+          </dd>
+        </dl>
+        <ul>
+          <li><a href="">Yoshie Kashiwabara</a>: Shiawase Ondo (しあわせ音頭) (1982)</li>
+          <li><a href="">Starbow</a>: Heartbreak Taiyōzoku (ハートブレイク太陽族) (1982)</li>
+        </ul>
+        <dl>
+          <dt>
+            <ul>
+              <li>Kumiko Yamashita:</li>
+            </ul>
+          </dt>
+          <dd>
+            赤道小町ドキッ (1982)
+            <br/>
+            Teenage Eagles (1983)
+          </dd>
+        </dl>
+        <ul>
+          <li>Kawakamisan to Nagashimasan: きたかチョーさんまってたドン (1983)</li>
+          <li><a href="">Miki Matsubara</a>: Paradise Beach (Sophie's Theme) (パラダイス ビーチ(ソフィーのテーマ), <i>Paradaisu Biichi (Sofii no Teema)</i>) (1983)</li>
+        </ul>
+        <dl>
+          <dt>
+            <ul>
+              <li><a href="">Seiko Matsuda</a>:</li>
+            </ul>
+          </dt>
+          <dd>
+            Tegoku no Kiss/Wagamama na Kataomoi (天国のキッス／わがままな片想い) (1983)
+            <br/>
+            Glass no Ringo (ガラスの林檎) (1983)
+            <br />
+            Pink no Mozart (ピンクのモーツァルト) (1984)
+          </dd>
+        </dl>
+        <dl>
+          <dt>
+            <ul>
+              <li><a href="">Shin'ichi Mori</a>:</li>
+            </ul>
+          </dt>
+          <dd>
+            New York Monogatari (紐育物語) (1983)
+            <br/>
+            Whiskey Iro no Machi de (ウイスキー色の街で)
+          </dd>
+        </dl>
+        <ul>
+          <li><a href="">Akina Nakamori</a>: Kinku (禁区) (1983)</li>
+        </ul>
+        <dl>
+          <dt>
+            <ul>
+              <li>Apogee & Perigee (<a href="">Jun Togawa</a>, Yuji Miyake and other artists):</li>
+            </ul>
+          </dt>
+          <dd>
+            Getsusekai Ryokou (月世界旅行) (1984, Alfa)
+            <br/>
+            Shinkuu Kiss (真空キッス) (1984, Alfa)
+          </dd>
+        </dl>
+        <ul>
+          <li><a href="">Jun Togawa</a>: 玉姫様 (1984)</li>
+          <li><a href="">Narumi Yasuda</a>: Kaze no Tani no Nausicaä (風の谷のナウシカ, <i>Kaze no Tani no Naushika</i>, <a href="">Nausicaä of the Valley of the Wind</a>) 
+            (<a href="">image song</a> for the film) (1984)
+          </li>
+          <li>"<a href="">NHK</a> News Today" opening theme (1988, NHK TV)</li>
+        </ul>
+        <dl>
+          <dt>
+            <ul>
+              <li><a href="">Chisato Moritaka</a>:</li>
+            </ul>
+          </dt>
+          <dd>
+            Miracle Light (ミラクルライト) (1997, zetima)
+            <br/>
+            <a href="">Kotoshi no Natsu wa More Better</a> (今年の夏はモアベター, <i>This Summer Will Be More Better</i>) – Writing, Performance, Production 
+            (1998, zetima)
+          </dd>
+        </dl>
+        <ul>
+          <li>Chappie: Tanabata no Yoru, Kimi ni Aitai (七夕の夜、君に逢いたい) (1999)</li>
+          <li>Kuniko Yamada: Tetsugaku Shiyō (哲学しよう)</li>
+          <li><a href="">Masatō Ibu</a>: Datte, Hormone Love (だって、ホルモンラブ)</li>
+        </ul>
+      </section>
+
+      <section id="filmography">
+        <h2>Filmography</h2>
+        <hr />
+        <h3><b>Music</b></h3>
+        <ul>
+          <li><i>Evening Primrose</i> (1974)</li>
+          <li><i>Summer Secret</i> (1982)</li>
+          <li><a href=""><i>Night on the Galactic Railroad</i></a> (1985)</li>
+          <li><i>Paradise View</i> (1985)</li>
+          <li><a href=""><i>A Promise</i></a> (1986)</li>
+          <li><i>Jazz Daimyō</i> (1986)</li>
+          <li><i>Murasaki Shikubu-Genji Monogatari</i> (1987)</li>
+          <li><i>Hoshi wo Tsugumono</i> (1990)</li>
+          <li><i>Southern Winds</i> (1993)</li>
+          <li><i>On the Way</i> (2000)</li>
+          <li><a href=""><i>House of Himiko</i></a> (2005)</li>
+          <li><a href=""><i>Appleseed Ex Machina</i></a> (2007, Music supervising director)</li>
+          <li><i>Shoplifters</i> (2018)<a href="#cite-16"><sup>[16]</sup></a></li>
+        </ul>
+        <h3><b>Acting</b></h3>
+        <ul>
+          <li><a href=""><i>Izakaya Chōji</i></a> (1983)</li>
+          <li><i>A Y.M.O. Film Propaganda</i> (1984)</li>
+          <li><i>Paradise view</i> (1985)</li>
+          <li><i>Shigatsu no Sakana</i> (1985)</li>
+          <li><i>Binetsu Shōnen</i> (1987)</li>
+          <li><a href=""><i>Norwegian Wood</i></a> (2010): Record Shop Manager</li>
+          <li><a href=""><i>Isle of Dogs</i></a> (2018): Scrap (japanese dub)<a href="#cite-17"><sup>[17]</sup></a></li>
+          <li><i>They Say Nothing Stays the Same</i> (2019)</li>
+          <li><i>Bullets, Bones and Blocked Noses</i> (2021, TV miniseries): Barber<a href="#cite-18"><sup>[18]</sup></a></li>
+        </ul>
+        <h3><b>Documentary appearance</b></h3>
+        <ul>
+          <li><i>No Smoking</i> (2019)<a href="#cite-19"><sup>[19]</sup></a></li>
+        </ul>
+      </section>
+
+      <section id="references">
+        <h2>References</h2>
+        <hr />
+        <ol class="res-columns">
+          <li id="cite-1"><a href="">"Haruomi Hosono Is the Japanese Experimenter Who Changed Pop Music Forever"</a>. <a href=""><i>Noisey</i></a>. October 10, 2018.</li>
+          <li id="cite-2"><a href="">"Famous Japanese & Foreigners In Japan: Ryuichi Sakamoto"</a>. <i>JapanVisitor</i>. GoodsFromJapan KK. Archived from 
+            <a href="">the original</a> on February 1, 2016. Retrieved January 31, 2016.
+          </li>
+          <li id="cite-3"><a href="">"The Essential... Yellow Magic Orchestra"</a>. <a href=""><i>FACT Magazine</i></a>. January 22, 2015.</li>
+          <li id="cite-4"><a href="">"Top 100 Japanese pops Artists - No.44"</a>. <a href=""><i>HMV Japan</i></a> (in Japanese). October 18, 2003. Retrieved January 13, 2016.</li>
+          <li id="cite-5"><a href="">"Top 100 Japanese pops Artists – No.4"</a>. <i>hmv.co.jp</i> (in Japanese). Retrieved April 26, 2013.</li>
+          <li id="cite-6"><a href="">"Bande originale : Lost in translation"</a>. EcranLarge. August 18, 2005. Retrieved March 23, 2008.</li>
+          <li id="cite-7"><a href=""><i>井上陽水 – 氷の世界</i></a> at <a href="">Discogs</a> (<a href="">Translation</a>)</li>
+          <li id="cite-8"><a href=""><i>Osamu Kitajima – Benzaiten</i></a> at <a href="">Discogs</a></li>
+          <li id="cite-9"><a href=""><i>Harry Hosono and the Yellow Magic Band – Paraiso</i></a> at <a href="">Discogs</a></li>
+          <li id="cite-10"><a href="">i<i>Pacific</i></a> at <a href="">Discogs</a></li>
+          <li id="cite-11">Dominique Leone (July 19, 2005). <a href="">"Hosono & Yokoo: Cochin Moon"</a>. <a href="">Pitchfork Media</a>. Retrieved May 26, 2011.</li>
+          <li id="cite-12"><a href=""><i>Ryuichi Sakamoto – Thousand Knives Of</i></a> at <a href="">Discogs</a></li>
+          <li id="cite-13"><a href=""><i>Haruomi Hosono – Video Game Music</i></a> at <a href="">Discogs</a> (list of releases)</li>
+          <li id="cite-14">Carlo Savorelli. <a href="">"Xevious"</a>. Hardcore Gaming 101. p. 2. Retrieved June 11, 2011.</li>
+          <li id="cite-15"><a href="">"Kaze no Tani no Naushika (Nausicaä of the Valley of Wind): Credits, Figures & Other Information"</a>. <a href="">Nausicaa.net</a>. Retrieved June 23, 2011.</li>
+          <li id="cite-16"><a href="">"細野晴臣の音楽家としての奥深さ 『万引き家族』サウンドトラックを聴いて"</a>. <i>Real Sound</i>. Retrieved December 4, 2021.</li>
+          <li id="cite-17"><a href="">"犬ヶ島"</a>. <i>Fox Japan</i>. Retrieved August 12, 2020.</li>
+          <li id="cite-18"><a href="">"オダギリジョー脚本・演出のドラマ「オリバーな犬」NHKで放送、主演は池松壮亮"</a>. <i>Natalie</i>. Retrieved June 23, 2021.</li>
+          <li id="cite-19"><a href="">"NO SMOKING"</a>. <i>Tokyo International Film Festival</i>. Retrieved December 4, 2021.</li>
+        </ol>
+      </section>      
+      <button onclick="window.scroll(0, 0);">top</button>
+    </main>
+   
+  </body>
+
+</html>

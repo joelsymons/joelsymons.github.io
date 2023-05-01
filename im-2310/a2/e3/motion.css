@@ -1,0 +1,75 @@
+#motion-container{
+  display: flex;
+  flex-direction: column;
+}
+
+#transition-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.transitionExample{
+  padding: 1rem;
+  height: 4rem;
+  background-color: blue;
+  flex-grow: 1;
+}
+
+#transition-example-1:hover{
+  background-color: red;
+}
+
+#animation-container{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.animationExample{
+  height: 8rem;
+  background-color: blue;
+  flex-grow: 1;
+}
+
+@keyframes cycleColour {
+  0% {
+    background-color: blue;
+  }
+  50% {
+    background-color: greenyellow;
+  }
+  100% {
+  background-color: crimson;
+  }
+}
+
+/* 
+#animation-example-1{
+  animation: cycleColour 5s infinite ease-in;
+}
+
+#animation-example-2{
+  animation: cycleColour 5s infinite ease-out;
+}
+
+#animation-example-3{
+  animation: cycleColour 5s infinite ease-in-out;
+}
+
+#animation-example-4{
+  animation: cycleColour 5s infinite linear;
+}
+
+#animation-example-5{
+  animation: cycleColour 5s infinite ease-in reverse;
+}
+
+#animation-example-6{
+  animation: cycleColour 5s infinite ease-in alternate;
+} 
+*/
+
+

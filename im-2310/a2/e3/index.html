@@ -1,22 +1,84 @@
 <!DOCTYPE html>
 
+<!-- 
+
+  PROVIDE MEANINGFUL FEEDBACK TO THE FOLLOWING ELEMENTS:
+  1) <button> with the id of load-link on the loading page (index.html)
+
+   >> JOEL (( The button not only doesn't look like a button, it gives very vague feedback about whether it's doing what it's meant to be doing.
+    >> It isn't clear what's going on on the page unless you wait until it finishes loading. I would recommend implementing something like a
+    >> 'loading wheel' or even just some text that says "Loading..." so that the user knows that the page is running properly. Additionally,
+    >> if you used a :hover class here on the button so that the text were to change visually when it is hovered over, or if you used an :active
+    >> class so the visual changes when clicked, this would also help. It is not intuitive to have bare static text acting as a button with little-to-no 
+    >> visual indication that it's a button. ))
+
+  2) <div> with the id of load-throbber on the loading page (index.html)
+
+    >> JOEL ((The 'throbber' doesn't seem to do anything visually. It seems as though it is meant to be a progress loading bar but it doesn't progress,
+    >> so maybe using a <progress> element instead would help to make it clearer that the page is loading. Otherwise you could use some kind of moving image,
+    >> perhaps a .gif file, to show that the page is simply loading and not just being unresponsive.))
+
+  3) <li> inside of the <ol> inside of the <nav> on the information page (hosono.html)
+
+    >> JOEL ((Something like a :hover class here would be beneficial to make it clear that these are in fact buttons to be clicked on. This has the same problem 
+    >> of static text not looking like a button by itself. Otherwise the buttons themselves work fine. A good addition would be a "Scroll back to top" button so
+    >> that you can quickly jump to and from different sections with ease.))
+
+  4) <button> with the id of mode-button on the information page (hosono.html)
+
+    >> JOEL ((The ability to switch from dark mode to light mode and back, with the innerHTML also reflecting this, is a nice touch. However it may initially be
+    >> unclear that this is a button, since it doesn't stand out in any way other than its position on the page, and once again when you hover over it there is
+    >> no indication that it's a button until you click it.))
+
+  5) switchModes() function - hint you can add a transition CSS property to the <body> and it will be inherited 
+  by all the elements inside, so when custom CSS variables are changed it will apply transition
+
+    >> JOEL ((The switch between the light and dark modes is a little abrupt, and it's especially jarring when it's from one extreme of the colour spectrum to the
+    >> other. To smooth this transition, we can use a transition CSS property so that it fades from dark to light or vice versa over a short duration instead of being instantaneous.
+
+    >> i.e. in the body text of 'style.css' you could write: 
+    
+    >> transition: all 0.5s ease;
+    
+    >> and then to specify which elements you want to change colour (in this case the background and the text), you'd write
+    >> h1, button, div, nav {
+    >> transition-property: color, background-color, border-color;
+    >> }
+
+-->
+
 <html lang="en">
 
   <head>
 
-    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-    <script src="script.js"></script>
-    
+    <title>Loading Page</title>
+
+    <script src="./fakeLoad.js" defer></script>
+
   </head>
 
-  <body>
+  <body id="load-body">
 
-    <h1>This is a totally eb...ic... famiy guy text page</h1>
-    <h2>what quag doin</h2>
-    <h3>gum</h3>
+      <h1>Haruomi Hosono</h1>
+      <!--
+        Typically I'd use an <a> here but as we're faking a load time I'm using a <button> instead.  If it was an 
+        <a> I would leave off the target attribute so that it would redirect the current tab.
+      -->
+      <!--
+        The function loadPageAfterDelay() is declared in the file fakeLoad.js - it takes a number value that sets the 
+        amount of time it takes in ms and a url to redirect to.
+      -->
+      <button id="load-link" onclick="loadPageAfterDelay(10000, './hosono.html')">Click to Load Page</button>
+      <!--
+        This is a div we're using for the throbber - if we wanted to do a % based loading bar there is an element 
+        called <progress> but as this one is just indicating a wait rather than providing direct feedback on progress I've 
+        opted for using a <div>.
+      -->
+      <div id="load-throbber"></div>
 
   </body>
 

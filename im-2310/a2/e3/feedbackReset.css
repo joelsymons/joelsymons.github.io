@@ -1,0 +1,13 @@
+nav ol li a {
+  color: var(--col-01);
+  text-decoration: none;
+  cursor: default;
+}
+
+#mode-button{
+  background-color: transparent;
+  border: 0;
+  color: var(--col-01);
+  text-decoration: none;
+  cursor: default;
+}
