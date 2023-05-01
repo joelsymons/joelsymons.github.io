@@ -25,7 +25,6 @@ body{
   padding: 1rem;
   background-color: var(--col-02);
   color: var(--col-01);
-  transition: all 0.5s ease;
 }
 
 nav {
@@ -159,9 +158,3 @@ li ul{
     scroll-behavior: auto;
   }
 }
-
- 
-  /* specify the properties to transition */
-  h1, button, div, nav {
-    transition-property: color, background-color, border-color;
-  }
