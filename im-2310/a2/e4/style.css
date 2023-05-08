@@ -1,0 +1,139 @@
+*{
+  box-sizing: border-box;
+  background-origin: border-box;
+  background-color: #990cf7;
+  margin: 0;
+}
+
+/* Basis for colour palette comes from 1bit Monitor Glow Palette by Polyducks */
+/* https://lospec.com/palette-list/1bit-monitor-glow */
+/* you're welcome to change the colours if you want or any of the other general page style */
+
+/* JOEL - I decided to use different shades of purple and pink for the page and the player as it juxtaposed with the content of the video. */
+:root{
+  --col-01:#222323;
+  --col-02:#82009c;
+  --col-03:#5252ff;
+  --col-04:#b6e878;
+  --col-05:#bcbdbc;
+  --col-06:#6f6f6f;
+  --border: 1px solid var(--col-02);
+  background-color: #990cf7;
+}
+/*  JOEL - I changed the wrapper code slightly to centre the video player both vertically and horizontally. */
+.video-player-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+  border-color: #000000;
+}
+
+/* becuase I want to overlay the play icon on the video they need to be in their own wrapper */
+.video-element-wrapper{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  padding: 10px;
+  background-color: #82009c;
+}
+
+#videoElement{
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+#videoPlayOverlay{
+  width: 8rem;
+  height: 8rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  opacity: 0.6;
+  display: none;
+}
+
+.video-controls-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+/* this overwrites the above display:flex - something which is then undone when the JS loads */
+#controlsWrapper{
+  display: none;
+}
+
+/* JOEL - Some minor styling for the timer I added. */
+#timer {
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  border-color: #ffffff;
+  border: 3px;
+  background-color: #82009c;
+  padding: 2px;
+}
+/* JOEL - Changed the colour of the pause/play button. */
+.video-control-button{
+  width: 2rem;
+  height: 2rem;
+  padding: .1rem;
+  border: none;
+  cursor: pointer;
+  background-color: #82009c;
+}
+.video-control-button:hover{
+  background-color: var(--col-05);
+}
+.video-control-button:active{
+  background-color: var(--col-06);
+}
+.button-icon{
+  pointer-events: none;
+}
+
+#playButton{
+  background-image: url('./icons/play.svg');
+}
+
+.video-progress-bar{
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  height: 2rem;
+  flex-grow: 1;
+  cursor: pointer;
+  background-color: var(--col-01);
+  box-shadow: 0 1px 2px var(--col-02) inset;
+}
+::-moz-progress-bar {
+  background-color: var(--col-02);
+}
+
+::-webkit-progress-bar {
+  background-color: var(--col-01);
+  box-shadow: 0 1px 2px var(--col-02) inset;
+}
+/* JOEL - I intentionally changed this from col-02 to col-05 (i.e. from purple to light grey) so that the progress of the player is easier for the user to see. */
+::-webkit-progress-value {
+  background-color: var(--col-05);
+}
+
+.timeline-loading{
+  background-image: -moz-repeating-linear-gradient(45deg, var(--col-03) 0% 2%, transparent 2% 4%, red 4%);
+  background-size: 200% 100%;
+  animation: loadingAnimation 4s linear infinite;
+}
+
+@keyframes loadingAnimation {
+  100%{
+    background-position: 50% 0%;
+  }
+}
