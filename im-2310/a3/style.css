@@ -18,6 +18,10 @@ body {
     outline: 2px solid black;
 }
 
+#mainButton:hover {
+    filter: brightness(90%); /*slightly darkens the rainbow button on mouse hover*/
+}
+
 .randomButton {
     position: absolute;
     width: 45px;
