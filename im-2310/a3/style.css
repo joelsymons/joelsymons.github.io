@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*centres the rainbow button*/
+    margin: 0;
+}
+
+#mainButton {
+    position: relative;
+    z-index: 2; /*change z index to keep the rainbow button always visible*/
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    border: none;
+    width: 60px; /*rainbow button slightly larger than colour buttons*/
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: 2px solid black;
+}
+
+.randomButton {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
